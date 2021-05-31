@@ -75,6 +75,9 @@ export abstract class CmsPluginCore {
             delete (line.meta);
         }
 
+        // Copy collect method array
+        line.channelData.collect = line.collect;
+
         return line;
     }
 
